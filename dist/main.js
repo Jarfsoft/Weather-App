@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("\n\n//# sourceURL=webpack://Second/./src/index.js?");
+eval("\nvar weatherInfo = {};\n\nasync function getWeatherInfo(cityName = 'Tegucigalpa') {\n  const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=1c954fe59dca8548d2eb13416b4f9da3`);\n  const data = await response.json();\n\n  Object.assign(weatherInfo, data);\n}\n\ngetWeatherInfo();\n\nconsole.log(weatherInfo);\n\n//# sourceURL=webpack://Weather_App/./src/index.js?");
 
 /***/ })
 
