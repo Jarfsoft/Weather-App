@@ -11,13 +11,23 @@
   <body>
     <nav class="navbar navbar-light bg-light">
       <a class="navbar-brand">Weather App</a>
-      <form class="form-inline">
-        <input class="form-control mr-sm-2" type="search" placeholder="Enter City Name" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
+      <div class="d-flex">
+        <input id="cityInput" class="form-control mr-sm-2" type="search" placeholder="Enter City Name" aria-label="Search">
+        <button id="cityBtn" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </div>
+      <label class="switch">Metric System: <input id="metricSystem" checked type="checkbox">   <span class="slider round"></span> </label>
     </nav>
-    <div id="content">
-
+    <div id="content" class="container justify-content-center my-5 py-5">
+      <h4 id="description"></h4>
+      <h2 id="city_country"></h2>
+      <div class="d-flex container justify-content-center">
+        <h1 id="temperature"></h1>
+        <div class="mx-5">
+          <h4 id="thermalSensation"></h2>
+          <h4 id="windSpeed"></h2>
+          <h4 id="humidity"></h2>
+        </div>
+      </div>
     </div>
     <script src="main.js"> </script>
   </body>
