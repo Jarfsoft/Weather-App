@@ -1,3 +1,25 @@
 #cityInput {
   width: 250px;
 }
+
+#content {
+  background-image: url(../images/img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 6rem;
+  padding-bottom: 10rem;
+}
+
+.big-font {
+  font-size: 5rem;
+}
+
+.font-p {
+  font-family: 'Zilla Slab Highlight', cursive;
+  color: rgb(250, 250, 250);
+}
+
+.max-margin {
+  padding-top: 8rem;
+}
