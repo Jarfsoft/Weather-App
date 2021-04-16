@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/styles/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap" rel="stylesheet">
     <title>Weather App</title>
   </head>
   <body>
@@ -17,15 +19,15 @@
       </div>
       <label class="switch">Metric System: <input id="metricSystem" checked type="checkbox">   <span class="slider round"></span> </label>
     </nav>
-    <div id="content" class="container justify-content-center my-5 py-5">
-      <h4 id="description"></h4>
-      <h2 id="city_country"></h2>
-      <div class="d-flex container justify-content-center">
-        <h1 id="temperature"></h1>
+    <div id="content" class="container-fluid justify-content-center">
+      <h4 id="description" class="text-center font-weight-bold font-p"></h4>
+      <h2 id="city_country" class="text-center font-weight-bold font-p"></h2>
+      <div class="d-flex container justify-content-center max-margin">
+        <h1 id="temperature" class="font-weight-bold big-font font-p"></h1>
         <div class="mx-5">
-          <h4 id="thermalSensation"></h2>
-          <h4 id="windSpeed"></h2>
-          <h4 id="humidity"></h2>
+          <h4 id="thermalSensation" class="font-weight-bold font-p"></h2>
+          <h4 id="windSpeed" class="font-weight-bold font-p"></h2>
+          <h4 id="humidity" class="font-weight-bold font-p"></h2>
         </div>
       </div>
     </div>
