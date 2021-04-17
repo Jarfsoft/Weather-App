@@ -16,7 +16,7 @@
 
 ## Live Demo
 
-[Live Demo](https://rawcdn.githack.com/Jarfsoft/Weather-App/fb25cbdb73c6d400aee3d8eb9c2a515eb9aa48f1/dist/index.html)
+[Live Demo](https://rawcdn.githack.com/Jarfsoft/Weather-App/9fd6c10740d7abf3c086269f411e18982f1b71c7/dist/index.html)
 
 
 ## Getting Started
