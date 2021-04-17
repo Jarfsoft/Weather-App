@@ -6,20 +6,14 @@ async function getWeatherInfo(cityName) {
   return data;
 }
 
-function changeBackground(main){
+function changeBackground(main) {
   const content = document.querySelector('#content');
-  if(main === 'Clear')
-    content.style.backgroundImage = "url('../assets/images/sun.jpg')";
-  else if(main === 'Rain')
-    content.style.backgroundImage = "url('../assets/images/rain.jpg')";
-  else if(main === 'Snow')
-    content.style.backgroundImage = "url('../assets/images/snow.jpg')";
-  else if(main === 'Dust')
-    content.style.backgroundImage = "url('../assets/images/dust.jpg')";
-  else if(main === 'Clouds')
-    content.style.backgroundImage = "url('../assets/images/clouds.jpg')";
-  else
-    content.style.backgroundImage = "url('../assets/images/img.jpg')";
+  if (main === 'Clear') content.style.backgroundImage = "url('../assets/images/sun.jpg')";
+  else if (main === 'Rain') content.style.backgroundImage = "url('../assets/images/rain.jpg')";
+  else if (main === 'Snow') content.style.backgroundImage = "url('../assets/images/snow.jpg')";
+  else if (main === 'Dust') content.style.backgroundImage = "url('../assets/images/dust.jpg')";
+  else if (main === 'Clouds') content.style.backgroundImage = "url('../assets/images/clouds.jpg')";
+  else content.style.backgroundImage = "url('../assets/images/img.jpg')";
 }
 
 const returnInfo = (city = 'Tegucigalpa', metricSystem = true) => {
