@@ -6,6 +6,22 @@ async function getWeatherInfo(cityName) {
   return data;
 }
 
+function changeBackground(main){
+  const content = document.querySelector('#content');
+  if(main === 'Clear')
+    content.style.backgroundImage = "url('../assets/images/sun.jpg')";
+  else if(main === 'Rain')
+    content.style.backgroundImage = "url('../assets/images/rain.jpg')";
+  else if(main === 'Snow')
+    content.style.backgroundImage = "url('../assets/images/snow.jpg')";
+  else if(main === 'Dust')
+    content.style.backgroundImage = "url('../assets/images/dust.jpg')";
+  else if(main === 'Clouds')
+    content.style.backgroundImage = "url('../assets/images/clouds.jpg')";
+  else
+    content.style.backgroundImage = "url('../assets/images/img.jpg')";
+}
+
 const returnInfo = (city = 'Tegucigalpa', metricSystem = true) => {
   getWeatherInfo(city).then((data) => {
     const { sys: { country: ctr } } = data;
@@ -16,6 +32,7 @@ const returnInfo = (city = 'Tegucigalpa', metricSystem = true) => {
     const [frst] = weather;
 
     document.querySelector('#description').textContent = `${frst.main}, ${frst.description}`;
+    changeBackground(frst.main);
 
     const { main: { temp: tmp, feels_like: fl, humidity: hm } } = data;
 
